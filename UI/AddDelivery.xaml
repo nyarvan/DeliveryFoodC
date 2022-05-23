@@ -1,0 +1,29 @@
+﻿<Window x:Class="UI.AddDelivery"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="AddDelivery" Height="749.282" Width="827.991">
+    <Grid>
+        <Label Content="Створення замовлення" Margin="27,26,27,0" VerticalAlignment="Top" FontSize="24" HorizontalAlignment="Center"/>
+        <Label Content="Ім'я" HorizontalAlignment="Left" Margin="37,100,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="NameBox" HorizontalAlignment="Left" Height="28" Margin="37,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="37,184,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Дата" HorizontalAlignment="Left" Margin="37,271,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <DatePicker x:Name="DateDelivery" HorizontalAlignment="Left" Margin="37,319,0,0" VerticalAlignment="Top" Width="190"/>
+        <Label Content="Час" HorizontalAlignment="Left" Margin="37,358,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="PhoneBox" HorizontalAlignment="Left" Height="28" Margin="37,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <Label Content="Замовлення" HorizontalAlignment="Left" Margin="37,438,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <ListBox x:Name="ListFood" HorizontalAlignment="Left" Height="160" Margin="37,485,0,0" VerticalAlignment="Top" Width="264"/>
+        <DataGrid x:Name="FoodDataGrid" HorizontalAlignment="Left" Height="322" Margin="321,195,0,0" VerticalAlignment="Top" Width="177" MouseDoubleClick="FoodDataGrid_MouseDoubleClick"/>
+        <DataGrid x:Name="SetDataGrid" HorizontalAlignment="Left" Height="322" Margin="535,195,0,0" VerticalAlignment="Top" Width="262" MouseDoubleClick="SetDataGrid_MouseDoubleClick"/>
+        <Button x:Name="ButtonAddDelivery" Content="Створити замовлення" HorizontalAlignment="Left" Margin="608,630,0,0" VerticalAlignment="Top" Width="189" Background="#FF5DFF00" FontSize="16" Height="59" Click="ButtonAddDelivery_Click"/>
+        <Button x:Name="DeleteFoodButton" Content="Видалити" HorizontalAlignment="Left" Margin="37,660,0,0" VerticalAlignment="Top" Width="75" Background="#FFFF8D8D" Foreground="White" Click="DeleteFoodButton_Click"/>
+        <TextBox x:Name="HourBox" HorizontalAlignment="Left" Height="23" Margin="37,394,0,0" TextWrapping="Wrap" Text="Введіть годину" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:Name="MinutesBox" HorizontalAlignment="Left" Height="23" Margin="153,394,0,0" TextWrapping="Wrap" Text="Введіть хвилину" VerticalAlignment="Top" Width="99"/>
+        <Button x:Name="ButtonUpdate" Content="Оновити замовлення" HorizontalAlignment="Left" Margin="608,630,0,0" VerticalAlignment="Top" Width="189" Background="#FFFFF411" FontSize="16" Height="59" Click="ButtonUpdate_Click" Visibility="Hidden" IsEnabled="False"/>
+
+    </Grid>
+</Window>

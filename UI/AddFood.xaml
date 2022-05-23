@@ -1,0 +1,19 @@
+﻿<Window x:Class="UI.AddFood"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="AddFood" Height="434.929" Width="356.459">
+    <Grid>
+        <Label Content="Створення страви" HorizontalAlignment="Left" Margin="75,21,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Назва" HorizontalAlignment="Left" Margin="32,89,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="NameBox" HorizontalAlignment="Left" Height="23" Margin="32,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" FontSize="16"/>
+        <Label Content="Ціна" HorizontalAlignment="Left" Margin="32,185,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="PriceBox" HorizontalAlignment="Left" Height="23" Margin="32,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" FontSize="16"/>
+        <Button x:Name="AddFoodButton" Content="Додати" HorizontalAlignment="Left" Margin="104,297,0,0" VerticalAlignment="Top" Width="132" Background="#FF2EFF00" Height="39" FontSize="18" Click="AddFoodButton_Click"/>
+        <Button x:Name="ButtonUpdate" Content="Оновити" HorizontalAlignment="Left" Margin="105,298,0,0" VerticalAlignment="Top" Width="132" Background="#FFE8FF00" Height="39" FontSize="18" Click="ButtonUpdate_Click" IsEnabled="False" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
